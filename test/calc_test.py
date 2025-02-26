@@ -19,9 +19,9 @@ def test_divide_by_zero():
     with pytest.raises(ValueError, match="Cannot divide by zero."):
         calc.divide(10, 0)
 
-# Testy, které by měly selhat
+#selhat
 def test_failed_add():
-    assert calc.add(1, 2) == 4  # Mělo by selhat
+    assert calc.add(1, 2) == 4
 
 def test_failed_subtract():
-    assert calc.subtract(5, 2) == 2  # Mělo by selhat
+    assert calc.subtract(5, 2) == 2
